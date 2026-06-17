@@ -190,8 +190,10 @@
                             <span><i class="fas fa-clock"></i> 2-4 Years</span>
                             <span><i class="fas fa-signal"></i> Advanced Level</span>
                         </div>
-                        <button class="btn btn-enroll">Enroll Now</button>
-                    </div> 
+                        <button class="btn enroll-btn"
+onclick="openRecordings()">
+ Enroll Now
+</button> <body>
 <!-- GEOGRAPHY RECORDINGS -->
 <section id="geo-recordings" class="geo-recordings">
 
@@ -367,7 +369,79 @@ x.style.display="none";
 x.style.display="block";
 }
 }
-</script>
+</script></body>
+                    </div> 
+
+border:none;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+transition:.4s;
+}
+
+.enroll-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 30px rgba(59,130,246,.8);
+}
+
+.geo-recordings{
+padding:80px 20px;
+}
+
+.record-title{
+text-align:center;
+font-size:36px;
+margin-bottom:10px;
+color:white;
+}
+
+.record-sub{
+text-align:center;
+opacity:.7;
+margin-bottom:30px;
+color:white;
+}
+
+.premium-btn{
+width:100%;
+padding:18px;
+margin:15px 0;
+border:none;
+border-radius:18px;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+color:white;
+transition:.4s;
+}
+
+.premium-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 30px rgba(59,130,246,.8);
+}
+
+.record-box{
+display:none;
+padding:25px;
+margin-top:15px;
+border-radius:20px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+}
+
+.record-warning{
+background:#dc262620;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+text-align:center;
+color:#ff8b8b;
+}
+
                 </div>
             </div>
         </div>
