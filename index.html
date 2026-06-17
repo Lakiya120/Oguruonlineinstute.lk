@@ -195,7 +195,7 @@
             </div>
         </div>
     </section>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -247,7 +247,14 @@
         .video-list-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px; padding: 0 10px; }
         .video-list-title { color: #FFD700; font-size: 22px; font-weight: 700; letter-spacing: 2px; }
         .video-list-count { background: rgba(255, 215, 0, 0.1); color: #FFD700; padding: 5px 15px; border-radius: 20px; font-size: 13px; font-weight: 600; border: 1px solid rgba(255, 215, 0, 0.3); }
-        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+
+        /* SCROLLABLE VIDEO GRID */
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; max-height: 80vh; overflow-y: auto; padding-right: 10px; }
+        .video-grid::-webkit-scrollbar { width: 6px; }
+        .video-grid::-webkit-scrollbar-track { background: rgba(255, 215, 0, 0.05); border-radius: 10px; }
+        .video-grid::-webkit-scrollbar-thumb { background: rgba(255, 215, 0, 0.3); border-radius: 10px; }
+        .video-grid::-webkit-scrollbar-thumb:hover { background: rgba(255, 215, 0, 0.5); }
+
         .video-card { background: linear-gradient(145deg, #1a1a1a, #0d0d0d); border: 1px solid rgba(255, 215, 0, 0.15); border-radius: 16px; overflow: hidden; transition: all 0.4s ease; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); }
         .video-card:hover { border-color: #FFD700; transform: translateY(-5px); box-shadow: 0 20px 60px rgba(255, 215, 0, 0.15); }
         .video-player { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; }
@@ -266,7 +273,7 @@
         .paid-badge { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000; padding: 12px 30px; border-radius: 30px; font-size: 14px; font-weight: 700; letter-spacing: 1px; box-shadow: 0 5px 25px rgba(255, 215, 0, 0.3); }
         .geo-footer { margin-top: 30px; color: #444; font-size: 12px; letter-spacing: 1px; position: relative; z-index: 1; }
 
-        @media (max-width: 768px) { .geo-title { font-size: 32px; } .batch-btn { min-width: 100%; padding: 25px 30px; } .subject-grid { grid-template-columns: 1fr; } .video-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .geo-title { font-size: 32px; } .batch-btn { min-width: 100%; padding: 25px 30px; } .subject-grid { grid-template-columns: 1fr; } .video-grid { grid-template-columns: 1fr; max-height: 70vh; } }
     </style>
 <base target="_blank">
 </head>
@@ -634,16 +641,16 @@
             </div>
         </div>
 
-        <!-- 2027 අභ්‍යන්තර ව්‍යුහය පාෂාණ හා පස (7 Lessons) -->
+        <!-- 2027 - පෂාණ හා පස (7 Lessons) -->
         <div class="video-container" id="videos-2027-bawthika">
             <div class="video-list-header">
-                <div class="video-list-title">🪨 2027 2nd Group පාෂාණ හා පස</div>
+                <div class="video-list-title">🪨 2027 2nd Group - බෞතික පාඩම</div>
                 <div class="video-list-count">7 Lessons</div>
             </div>
             <div class="video-grid">
                 <div class="video-card">
                     <div class="video-player">
-                        <iframe src="https://www.youtube.com/embed/KgkKiHXO_Uw?rel=0&modestbranding=1" title="බෞතික පාඩ් - Lesson 1" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/KgkKiHXO_Uw?rel=0&modestbranding=1" title="බෞතික පාඩම - Lesson 1" allowfullscreen></iframe>
                     </div>
                     <div class="video-info">
                         <div class="video-meta-header">
@@ -662,7 +669,7 @@
                             <div class="video-lesson-num">Lesson 02</div>
                             <div class="video-date">2026-03-26</div>
                         </div>
-                        <h3 class="video-title">පාෂාණ හා පස - Theory Continuation</h3>
+                        <h3 class="video-title">පාෂාණ හා පස - Theory </h3>
                     </div>
                 </div>
                 <div class="video-card">
@@ -686,7 +693,7 @@
                             <div class="video-lesson-num">Lesson 04</div>
                             <div class="video-date">2026-05-04</div>
                         </div>
-                        <h3 class="video-title">පාෂාණ හා පස - Practical Applications</h3>
+                        <h3 class="video-title">පාෂාණ හා පස </h3>
                     </div>
                 </div>
                 <div class="video-card">
@@ -698,7 +705,7 @@
                             <div class="video-lesson-num">Lesson 05</div>
                             <div class="video-date">2026-05-18</div>
                         </div>
-                        <h3 class="video-title">පෘථිවි අභ්‍යන්තර ව්‍යුහය - Case Studies</h3>
+                        <h3 class="video-title">පෘථිවි අභ්‍යන්තර ව්‍යුහය </h3>
                     </div>
                 </div>
                 <div class="video-card">
@@ -710,7 +717,7 @@
                             <div class="video-lesson-num">Lesson 06</div>
                             <div class="video-date">2026-05-25</div>
                         </div>
-                        <h3 class="video-title">පාෂාණ හා පස -  Part 1</h3>
+                        <h3 class="video-title">පාෂාණ හා පස </h3>
                     </div>
                 </div>
                 <div class="video-card">
@@ -722,7 +729,7 @@
                             <div class="video-lesson-num">Lesson 07</div>
                             <div class="video-date">2026-06-01</div>
                         </div>
-                        <h3 class="video-title">පෘථිවි අභ්‍යන්තර ව්‍යුහය - Final Revision</h3>
+                        <h3 class="video-title">පෘථිවි අභ්‍යන්තර ව්‍යුහය </h3>
                     </div>
                 </div>
             </div>
@@ -731,17 +738,10 @@
             </div>
         </div>
 
-        <!-- Paid Badge -->
         <div class="paid-badge-container">
-            <div class="paid-badge">
-                ⭐ PAID CONTENT • OGURU Exclusive
-            </div>
+            <div class="paid-badge">⭐ PAID CONTENT • OGURU Exclusive</div>
         </div>
-
-        <!-- Footer -->
-        <div class="geo-footer">
-            🚫 SHARING IS STRICTLY PROHIBITED • OGURU Online Institute
-        </div>
+        <div class="geo-footer">🚫 SHARING IS STRICTLY PROHIBITED • OGURU Online Institute</div>
 
     </section>
 
@@ -833,7 +833,7 @@
     </script>
 
 </body>
-</html>
+</html> 
     <!-- Why Choose Us -->
     <section id="why-us" class="why-us">
         <div class="container">
