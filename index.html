@@ -247,34 +247,57 @@
             </div>
         </div>
     </section>
-<!-- ============================================
-     GEOGRAPHY RECORDINGS - PREMIUM SECTION
-     ============================================ -->
-<section id="geography-recordings" style="
-    padding: 80px 20px;
-    background: linear-gradient(180deg, #0a0a0a 0%, #000000 50%, #0a0a0a 100%);
-    text-align: center;
-    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-">
-    
-    <!-- Animated Background Glow -->
-    <div style="
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 600px;
-        height: 600px;
-        background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
-        pointer-events: none;
-        z-index: 0;
-    "></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGURU - Geography Recordings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Section Header -->
-    <div style="position: relative; z-index: 1; margin-bottom: 50px;">
-        <div style="
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #000;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        /* ============================================
+           GEOGRAPHY RECORDINGS SECTION
+           ============================================ */
+        .geo-section {
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #0a0a0a 0%, #000000 50%, #0a0a0a 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .geo-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* Header */
+        .geo-header {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px;
+        }
+
+        .geo-label {
             display: inline-block;
             background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
             -webkit-background-clip: text;
@@ -285,284 +308,1004 @@
             letter-spacing: 4px;
             text-transform: uppercase;
             margin-bottom: 15px;
-        ">
-            🎓 Exclusive Access
-        </div>
-        
-        <h2 style="
+        }
+
+        .geo-title {
             color: #ffffff;
             font-size: 42px;
             font-weight: 700;
             margin: 0 0 15px 0;
             letter-spacing: 1px;
             text-shadow: 0 0 40px rgba(255, 215, 0, 0.15);
-        ">
-            Geography <span style="color: #FFD700;">Recordings</span>
-        </h2>
-        
-        <div style="
+        }
+
+        .geo-title span {
+            color: #FFD700;
+        }
+
+        .geo-divider {
             width: 80px;
             height: 3px;
             background: linear-gradient(90deg, transparent, #FFD700, transparent);
             margin: 0 auto 20px auto;
-        "></div>
-        
-        <p style="
+        }
+
+        .geo-subtitle {
             color: #888;
             font-size: 17px;
-            margin: 0;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 600px;
+            margin: 0 auto;
             line-height: 1.6;
-        ">
-            Select your academic batch to access premium recorded lessons
-        </p>
-    </div>
+        }
 
-    <!-- Batch Buttons Container -->
-    <div style="
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-        max-width: 900px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
-    ">
+        .warning-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(255, 0, 0, 0.3);
+            color: #ff4444;
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
 
-        <!-- ===== 2026 BATCH CARD ===== -->
-        <a href="https://youtube.com/playlist?list=YOUR_2026_PLAYLIST_ID" 
-           target="_blank"
-           style="text-decoration: none; display: block;">
-            <div style="
-                background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-                border: 2px solid rgba(255, 215, 0, 0.3);
-                border-radius: 20px;
-                padding: 40px 50px;
-                min-width: 260px;
-                text-align: center;
-                position: relative;
-                overflow: hidden;
-                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                cursor: pointer;
-                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-            "
-            onmouseover="
-                this.style.borderColor='#FFD700';
-                this.style.transform='translateY(-10px) scale(1.02)';
-                this.style.boxShadow='0 20px 60px rgba(255, 215, 0, 0.2), 0 0 100px rgba(255, 215, 0, 0.1)';
-                this.children[0].style.opacity='1';
-                this.children[1].style.transform='scale(1.1)';
-            "
-            onmouseout="
-                this.style.borderColor='rgba(255, 215, 0, 0.3)';
-                this.style.transform='translateY(0) scale(1)';
-                this.style.boxShadow='0 10px 40px rgba(0, 0, 0, 0.5)';
-                this.children[0].style.opacity='0';
-                this.children[1].style.transform='scale(1)';
-            ">
-                
-                <!-- Shine Effect -->
-                <div style="
-                    position: absolute;
-                    top: -50%;
-                    left: -50%;
-                    width: 200%;
-                    height: 200%;
-                    background: linear-gradient(
-                        45deg,
-                        transparent 30%,
-                        rgba(255, 215, 0, 0.03) 50%,
-                        transparent 70%
-                    );
-                    opacity: 0;
-                    transition: opacity 0.4s ease;
-                    pointer-events: none;
-                "></div>
+        /* ============================================
+           LEVEL 1: BATCH BUTTONS
+           ============================================ */
+        .batch-container {
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            position: relative;
+            z-index: 1;
+        }
 
-                <!-- Icon -->
-                <div style="
-                    width: 70px;
-                    height: 70px;
-                    background: linear-gradient(135deg, #FFD700, #FFA500);
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0 auto 20px auto;
-                    font-size: 30px;
-                    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
-                    transition: transform 0.4s ease;
-                ">🎬</div>
+        .batch-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
 
-                <!-- Year Badge -->
-                <div style="
-                    display: inline-block;
-                    background: linear-gradient(135deg, #FFD700, #FFA500);
-                    color: #000;
-                    font-size: 28px;
-                    font-weight: 800;
-                    padding: 8px 25px;
-                    border-radius: 30px;
-                    margin-bottom: 15px;
-                    letter-spacing: 2px;
-                ">2026</div>
+        .batch-btn {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 20px;
+            padding: 30px 50px;
+            min-width: 280px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
 
-                <!-- Label -->
-                <div style="
-                    color: #FFD700;
-                    font-size: 16px;
-                    font-weight: 600;
-                    letter-spacing: 3px;
-                    text-transform: uppercase;
-                    margin-bottom: 10px;
-                ">Batch Recordings</div>
+        .batch-btn:hover {
+            border-color: #FFD700;
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(255, 215, 0, 0.2), 0 0 100px rgba(255, 215, 0, 0.1);
+        }
 
-                <!-- Description -->
-                <div style="
-                    color: #666;
-                    font-size: 14px;
-                    line-height: 1.5;
-                ">
-                    Access all Geography<br>recorded lessons
+        .batch-btn.active {
+            border-color: #FFD700;
+            background: linear-gradient(145deg, #2a1a00, #1a1000);
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+        }
+
+        .batch-btn::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 40%, rgba(255, 215, 0, 0.03) 50%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        .batch-btn:hover::before {
+            opacity: 1;
+        }
+
+        .batch-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px auto;
+            font-size: 24px;
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .batch-year {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #000;
+            font-size: 28px;
+            font-weight: 800;
+            padding: 5px 20px;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .batch-text {
+            color: #888;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .batch-arrow {
+            margin-top: 15px;
+            color: #FFD700;
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .batch-btn.active .batch-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* ============================================
+           LEVEL 2: SUBJECT BUTTONS
+           ============================================ */
+        .subject-container {
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+            position: relative;
+            z-index: 1;
+            display: none;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        .subject-container.show {
+            display: block;
+        }
+
+        .subject-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .subject-header-title {
+            color: #FFD700;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .subject-btn {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border: 2px solid rgba(255, 215, 0, 0.2);
+            border-radius: 16px;
+            padding: 25px 30px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .subject-btn:hover {
+            border-color: #FFD700;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.15);
+        }
+
+        .subject-btn.active {
+            border-color: #FFD700;
+            background: linear-gradient(145deg, #2a1a00, #1a1000);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+        }
+
+        .subject-btn .subject-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subject-btn .subject-name {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .subject-btn .subject-lessons {
+            color: #888;
+            font-size: 13px;
+        }
+
+        .subject-btn .subject-arrow {
+            margin-top: 10px;
+            color: #FFD700;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .subject-btn.active .subject-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* ============================================
+           LEVEL 3: VIDEO LIST
+           ============================================ */
+        .video-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            display: none;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        .video-container.show {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .video-list-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+
+        .video-list-title {
+            color: #FFD700;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .video-list-count {
+            background: rgba(255, 215, 0, 0.1);
+            color: #FFD700;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .video-card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border: 1px solid rgba(255, 215, 0, 0.15);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-card:hover {
+            border-color: #FFD700;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(255, 215, 0, 0.15);
+        }
+
+        .video-player {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-info {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .video-meta-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .video-lesson-num {
+            color: #FFD700;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .video-date {
+            background: rgba(255, 215, 0, 0.1);
+            color: #FFD700;
+            padding: 3px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .video-title {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+        }
+
+        .video-desc {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Close Button */
+        .close-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .close-btn {
+            background: transparent;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            color: #FFD700;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .close-btn:hover {
+            background: #FFD700;
+            color: #000;
+            border-color: #FFD700;
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Paid Badge */
+        .paid-badge-container {
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .paid-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Footer */
+        .geo-footer {
+            margin-top: 30px;
+            color: #444;
+            font-size: 12px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .geo-title {
+                font-size: 32px;
+            }
+
+            .batch-btn {
+                min-width: 100%;
+                padding: 25px 30px;
+            }
+
+            .subject-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+
+    <!-- ============================================
+         GEOGRAPHY RECORDINGS SECTION
+         ============================================ -->
+    <section class="geo-section">
+
+        <!-- Header -->
+        <div class="geo-header">
+            <div class="geo-label">🎓 Exclusive Video Lessons</div>
+            <h2 class="geo-title">Geography <span>Recordings</span></h2>
+            <div class="geo-divider"></div>
+            <p class="geo-subtitle">Select your batch and subject to access recorded lessons</p>
+            <div class="warning-badge">🚫 SHARING STRICTLY PROHIBITED 🚫</div>
+        </div>
+
+        <!-- ============================================
+             LEVEL 1: BATCH BUTTONS
+             ============================================ -->
+        <div class="batch-container">
+            <div class="batch-buttons">
+
+                <!-- 2026 Batch Button -->
+                <div class="batch-btn" onclick="selectBatch('2026')" id="batch-2026">
+                    <div class="batch-icon">🎓</div>
+                    <div class="batch-year">2026</div>
+                    <div class="batch-text">Batch Recordings</div>
+                    <div class="batch-arrow">▼</div>
                 </div>
 
-                <!-- Arrow Indicator -->
-                <div style="
-                    margin-top: 20px;
-                    color: #FFD700;
-                    font-size: 20px;
-                    opacity: 0.6;
-                    transition: all 0.3s ease;
-                ">→</div>
-            </div>
-        </a>
-
-        <!-- ===== 2027 BATCH CARD ===== -->
-        <a href="https://youtube.com/playlist?list=YOUR_2027_PLAYLIST_ID" 
-           target="_blank"
-           style="text-decoration: none; display: block;">
-            <div style="
-                background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-                border: 2px solid rgba(255, 215, 0, 0.3);
-                border-radius: 20px;
-                padding: 40px 50px;
-                min-width: 260px;
-                text-align: center;
-                position: relative;
-                overflow: hidden;
-                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                cursor: pointer;
-                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-            "
-            onmouseover="
-                this.style.borderColor='#FFD700';
-                this.style.transform='translateY(-10px) scale(1.02)';
-                this.style.boxShadow='0 20px 60px rgba(255, 215, 0, 0.2), 0 0 100px rgba(255, 215, 0, 0.1)';
-                this.children[0].style.opacity='1';
-                this.children[1].style.transform='scale(1.1)';
-            "
-            onmouseout="
-                this.style.borderColor='rgba(255, 215, 0, 0.3)';
-                this.style.transform='translateY(0) scale(1)';
-                this.style.boxShadow='0 10px 40px rgba(0, 0, 0, 0.5)';
-                this.children[0].style.opacity='0';
-                this.children[1].style.transform='scale(1)';
-            ">
-                
-                <!-- Shine Effect -->
-                <div style="
-                    position: absolute;
-                    top: -50%;
-                    left: -50%;
-                    width: 200%;
-                    height: 200%;
-                    background: linear-gradient(
-                        45deg,
-                        transparent 30%,
-                        rgba(255, 215, 0, 0.03) 50%,
-                        transparent 70%
-                    );
-                    opacity: 0;
-                    transition: opacity 0.4s ease;
-                    pointer-events: none;
-                "></div>
-
-                <!-- Icon -->
-                <div style="
-                    width: 70px;
-                    height: 70px;
-                    background: linear-gradient(135deg, #FFD700, #FFA500);
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0 auto 20px auto;
-                    font-size: 30px;
-                    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
-                    transition: transform 0.4s ease;
-                ">🎬</div>
-
-                <!-- Year Badge -->
-                <div style="
-                    display: inline-block;
-                    background: linear-gradient(135deg, #FFD700, #FFA500);
-                    color: #000;
-                    font-size: 28px;
-                    font-weight: 800;
-                    padding: 8px 25px;
-                    border-radius: 30px;
-                    margin-bottom: 15px;
-                    letter-spacing: 2px;
-                ">2027</div>
-
-                <!-- Label -->
-                <div style="
-                    color: #FFD700;
-                    font-size: 16px;
-                    font-weight: 600;
-                    letter-spacing: 3px;
-                    text-transform: uppercase;
-                    margin-bottom: 10px;
-                ">Batch Recordings</div>
-
-                <!-- Description -->
-                <div style="
-                    color: #666;
-                    font-size: 14px;
-                    line-height: 1.5;
-                ">
-                    Access all Geography<br>recorded lessons
+                <!-- 2027 Batch Button -->
+                <div class="batch-btn" onclick="selectBatch('2027')" id="batch-2027">
+                    <div class="batch-icon">🎓</div>
+                    <div class="batch-year">2027</div>
+                    <div class="batch-text">Batch Recordings</div>
+                    <div class="batch-arrow">▼</div>
                 </div>
 
-                <!-- Arrow Indicator -->
-                <div style="
-                    margin-top: 20px;
-                    color: #FFD700;
-                    font-size: 20px;
-                    opacity: 0.6;
-                    transition: all 0.3s ease;
-                ">→</div>
             </div>
-        </a>
+        </div>
 
-    </div>
+        <!-- ============================================
+             LEVEL 2: SUBJECT BUTTONS (2026)
+             ============================================ -->
+        <div class="subject-container" id="subjects-2026">
+            <div class="subject-header">
+                <div class="subject-header-title">📚 2026 Batch - Select Subject</div>
+            </div>
+            <div class="subject-grid">
 
-    <!-- Bottom Note -->
-    <div style="
-        margin-top: 50px;
-        color: #444;
-        font-size: 13px;
-        letter-spacing: 1px;
-        position: relative;
-        z-index: 1;
-    ">
-        🔒 Premium Content • YouTube Playlist Access
-    </div>
+                <div class="subject-btn" onclick="selectSubject('2026', 'bioma')" id="subject-2026-bioma">
+                    <div class="subject-icon">🌿</div>
+                    <div class="subject-name">බියෝම</div>
+                    <div class="subject-lessons">7 Lessons</div>
+                    <div class="subject-arrow">▼</div>
+                </div>
 
-</section>
+                <div class="subject-btn" onclick="selectSubject('2026', 'climate')" id="subject-2026-climate">
+                    <div class="subject-icon">🌤️</div>
+                    <div class="subject-name">ජලවායු</div>
+                    <div class="subject-lessons">6 Lessons</div>
+                    <div class="subject-arrow">▼</div>
+                </div>
+
+                <div class="subject-btn" onclick="selectSubject('2026', 'landforms')" id="subject-2026-landforms">
+                    <div class="subject-icon">⛰️</div>
+                    <div class="subject-name">භූ ලක්ෂණ</div>
+                    <div class="subject-lessons">5 Lessons</div>
+                    <div class="subject-arrow">▼</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============================================
+             LEVEL 2: SUBJECT BUTTONS (2027)
+             ============================================ -->
+        <div class="subject-container" id="subjects-2027">
+            <div class="subject-header">
+                <div class="subject-header-title">📚 2027 Batch - Select Subject</div>
+            </div>
+            <div class="subject-grid">
+
+                <div class="subject-btn" onclick="selectSubject('2027', 'janawasa')" id="subject-2027-janawasa">
+                    <div class="subject-icon">🏘️</div>
+                    <div class="subject-name">ජනාවාස</div>
+                    <div class="subject-lessons">5 Lessons</div>
+                    <div class="subject-arrow">▼</div>
+                </div>
+
+                <div class="subject-btn" onclick="selectSubject('2027', 'map')" id="subject-2027-map">
+                    <div class="subject-icon">🗺️</div>
+                    <div class="subject-name">සිතියම්</div>
+                    <div class="subject-lessons">4 Lessons</div>
+                    <div class="subject-arrow">▼</div>
+                </div>
+
+                <div class="subject-btn" onclick="selectSubject('2027', 'rivers')" id="subject-2027-rivers">
+                    <div class="subject-icon">🌊</div>
+                    <div class="subject-name">ගඟුල්</div>
+                    <div class="subject-lessons">6 Lessons</div>
+                    <div class="subject-arrow">▼</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============================================
+             LEVEL 3: VIDEO LISTS
+             ============================================ -->
+
+        <!-- 2026 - බියෝම Videos -->
+        <div class="video-container" id="videos-2026-bioma">
+            <div class="video-list-header">
+                <div class="video-list-title">🌿 2026 - බියෝම (Bioma)</div>
+                <div class="video-list-count">7 Lessons</div>
+            </div>
+            <div class="video-grid">
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/9i4NIQETOBg?rel=0&modestbranding=1" 
+                                title="බියෝම - Lesson 1" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 01</div>
+                            <div class="video-date">2026-03-07</div>
+                        </div>
+                        <h3 class="video-title">බියෝම - Introduction</h3>
+                        <p class="video-desc">First theory class - Introduction to Bioma concepts.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/LXL_TvpxoM0?rel=0&modestbranding=1" 
+                                title="බියෝම - Lesson 2" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 02</div>
+                            <div class="video-date">2026-03-14</div>
+                        </div>
+                        <h3 class="video-title">බියෝම - Theory Continuation</h3>
+                        <p class="video-desc">Second theory class - Deep dive into Bioma concepts.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/--7SU6TN34A?rel=0&modestbranding=1" 
+                                title="බියෝම - Lesson 3" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 03</div>
+                            <div class="video-date">2026-03-21</div>
+                        </div>
+                        <h3 class="video-title">බියෝම - Advanced Theory</h3>
+                        <p class="video-desc">Third theory class - Advanced Bioma theory discussion.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/oFst7Z-TX4Y?rel=0&modestbranding=1" 
+                                title="බියෝම - Lesson 4" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 04</div>
+                            <div class="video-date">2026-03-28</div>
+                        </div>
+                        <h3 class="video-title">බියෝම - Practical Applications</h3>
+                        <p class="video-desc">Fourth theory class - Practical applications of Bioma.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/5wpHVe7MTE4?rel=0&modestbranding=1" 
+                                title="බියෝම - Lesson 5" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 05</div>
+                            <div class="video-date">2026-04-04</div>
+                        </div>
+                        <h3 class="video-title">බියෝම - Case Studies</h3>
+                        <p class="video-desc">Fifth theory class - Real world case studies analysis.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/kxyYf7neR50?rel=0&modestbranding=1" 
+                                title="බියෝම - Lesson 6" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 06</div>
+                            <div class="video-date">2026-04-18</div>
+                        </div>
+                        <h3 class="video-title">බියෝම - Revision Part 1</h3>
+                        <p class="video-desc">Sixth theory class - First revision session.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/P8hWmCzpKGA?rel=0&modestbranding=1" 
+                                title="බියෝම - Lesson 7" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 07</div>
+                            <div class="video-date">2026-04-25</div>
+                        </div>
+                        <h3 class="video-title">බියෝම - Final Revision</h3>
+                        <p class="video-desc">Seventh theory class - Final revision and Q&A.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="close-section">
+                <button class="close-btn" onclick="closeAll()">▲ Close Lessons</button>
+            </div>
+        </div>
+
+        <!-- 2026 - ජලවායු Videos (Placeholder) -->
+        <div class="video-container" id="videos-2026-climate">
+            <div class="video-list-header">
+                <div class="video-list-title">🌤️ 2026 - ජලවායු (Climate)</div>
+                <div class="video-list-count">6 Lessons</div>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/PLACEHOLDER?rel=0&modestbranding=1" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 01</div>
+                            <div class="video-date">2026-05-02</div>
+                        </div>
+                        <h3 class="video-title">ජලවායු - Introduction</h3>
+                        <p class="video-desc">Add your video links here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="close-section">
+                <button class="close-btn" onclick="closeAll()">▲ Close Lessons</button>
+            </div>
+        </div>
+
+        <!-- 2026 - භූ ලක්ෂණ Videos (Placeholder) -->
+        <div class="video-container" id="videos-2026-landforms">
+            <div class="video-list-header">
+                <div class="video-list-title">⛰️ 2026 - භූ ලක්ෂණ (Landforms)</div>
+                <div class="video-list-count">5 Lessons</div>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/PLACEHOLDER?rel=0&modestbranding=1" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 01</div>
+                            <div class="video-date">2026-06-01</div>
+                        </div>
+                        <h3 class="video-title">භූ ලක්ෂණ - Introduction</h3>
+                        <p class="video-desc">Add your video links here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="close-section">
+                <button class="close-btn" onclick="closeAll()">▲ Close Lessons</button>
+            </div>
+        </div>
+
+        <!-- 2027 - ජනාවාස Videos -->
+        <div class="video-container" id="videos-2027-janawasa">
+            <div class="video-list-header">
+                <div class="video-list-title">🏘️ 2027 - ජනාවාස (Population)</div>
+                <div class="video-list-count">5 Lessons</div>
+            </div>
+            <div class="video-grid">
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/jv-x2Baw6TY?rel=0&modestbranding=1" 
+                                title="ජනාවාස - Lesson 1" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 01</div>
+                            <div class="video-date">2025-12-25</div>
+                        </div>
+                        <h3 class="video-title">ජනාවාස - Introduction</h3>
+                        <p class="video-desc">First theory class - Introduction to Population & Settlement.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/o4DourdKxhY?rel=0&modestbranding=1" 
+                                title="ජනාවාස - Lesson 2" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 02</div>
+                            <div class="video-date">2026-01-07</div>
+                        </div>
+                        <h3 class="video-title">ජනාවාස - Theory Continuation</h3>
+                        <p class="video-desc">Second theory class - Deep dive into population concepts.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/mHgEe4mI1eY?rel=0&modestbranding=1" 
+                                title="ජනාවාස - Lesson 3" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 03</div>
+                            <div class="video-date">2026-01-21</div>
+                        </div>
+                        <h3 class="video-title">ජනාවාස - Advanced Theory</h3>
+                        <p class="video-desc">Third theory class - Advanced population & settlement theory.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/JLoFc6q9sk4?rel=0&modestbranding=1" 
+                                title="ජනාවාස - Lesson 4" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 04</div>
+                            <div class="video-date">2026-01-28</div>
+                        </div>
+                        <h3 class="video-title">ජනාවාස - Practical Applications</h3>
+                        <p class="video-desc">Fourth theory class - Practical applications of population studies.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/PsjG7G1aFgs?rel=0&modestbranding=1" 
+                                title="ජනාවාස - Lesson 5" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 05</div>
+                            <div class="video-date">2026-02-18</div>
+                        </div>
+                        <h3 class="video-title">ජනාවාස - Final Revision</h3>
+                        <p class="video-desc">Fifth theory class - Final revision and exam preparation.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="close-section">
+                <button class="close-btn" onclick="closeAll()">▲ Close Lessons</button>
+            </div>
+        </div>
+
+        <!-- 2027 - සිතියම් Videos (Placeholder) -->
+        <div class="video-container" id="videos-2027-map">
+            <div class="video-list-header">
+                <div class="video-list-title">🗺️ 2027 - සිතියම් (Maps)</div>
+                <div class="video-list-count">4 Lessons</div>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/PLACEHOLDER?rel=0&modestbranding=1" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 01</div>
+                            <div class="video-date">2026-03-01</div>
+                        </div>
+                        <h3 class="video-title">සිතියම් - Introduction</h3>
+                        <p class="video-desc">Add your video links here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="close-section">
+                <button class="close-btn" onclick="closeAll()">▲ Close Lessons</button>
+            </div>
+        </div>
+
+        <!-- 2027 - ගඟුල් Videos (Placeholder) -->
+        <div class="video-container" id="videos-2027-rivers">
+            <div class="video-list-header">
+                <div class="video-list-title">🌊 2027 - ගඟුල් (Rivers)</div>
+                <div class="video-list-count">6 Lessons</div>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/PLACEHOLDER?rel=0&modestbranding=1" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-header">
+                            <div class="video-lesson-num">Lesson 01</div>
+                            <div class="video-date">2026-04-01</div>
+                        </div>
+                        <h3 class="video-title">ගඟුල් - Introduction</h3>
+                        <p class="video-desc">Add your video links here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="close-section">
+                <button class="close-btn" onclick="closeAll()">▲ Close Lessons</button>
+            </div>
+        </div>
+
+        <!-- Paid Badge -->
+        <div class="paid-badge-container">
+            <div class="paid-badge">
+                ⭐ PAID CONTENT • OGURU Exclusive
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="geo-footer">
+            🚫 SHARING IS STRICTLY PROHIBITED • OGURU Online Institute
+        </div>
+
+    </section>
+
+    <script>
+        let currentBatch = null;
+        let currentSubject = null;
+
+        function selectBatch(batch) {
+            const batchBtn = document.getElementById('batch-' + batch);
+            const subjectsContainer = document.getElementById('subjects-' + batch);
+            const otherBatch = batch === '2026' ? '2027' : '2026';
+            const otherBatchBtn = document.getElementById('batch-' + otherBatch);
+            const otherSubjects = document.getElementById('subjects-' + otherBatch);
+
+            // Close other batch
+            if (otherBatchBtn.classList.contains('active')) {
+                otherBatchBtn.classList.remove('active');
+                otherSubjects.classList.remove('show');
+            }
+
+            // Toggle current batch
+            if (batchBtn.classList.contains('active')) {
+                batchBtn.classList.remove('active');
+                subjectsContainer.classList.remove('show');
+                currentBatch = null;
+            } else {
+                batchBtn.classList.add('active');
+                subjectsContainer.classList.add('show');
+                currentBatch = batch;
+
+                // Scroll to subjects
+                setTimeout(() => {
+                    subjectsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 100);
+            }
+
+            // Close any open videos
+            closeVideos();
+        }
+
+        function selectSubject(batch, subject) {
+            const subjectBtn = document.getElementById('subject-' + batch + '-' + subject);
+            const videosContainer = document.getElementById('videos-' + batch + '-' + subject);
+
+            // Close other subjects in same batch
+            const allSubjectBtns = document.querySelectorAll('[id^="subject-' + batch + '-"]');
+            allSubjectBtns.forEach(btn => {
+                if (btn.id !== 'subject-' + batch + '-' + subject) {
+                    btn.classList.remove('active');
+                }
+            });
+
+            const allVideoContainers = document.querySelectorAll('[id^="videos-' + batch + '-"]');
+            allVideoContainers.forEach(container => {
+                if (container.id !== 'videos-' + batch + '-' + subject) {
+                    container.classList.remove('show');
+                }
+            });
+
+            // Toggle current subject
+            if (subjectBtn.classList.contains('active')) {
+                subjectBtn.classList.remove('active');
+                videosContainer.classList.remove('show');
+                currentSubject = null;
+            } else {
+                subjectBtn.classList.add('active');
+                videosContainer.classList.add('show');
+                currentSubject = subject;
+
+                // Scroll to videos
+                setTimeout(() => {
+                    videosContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+
+        function closeVideos() {
+            // Close all video containers
+            document.querySelectorAll('.video-container').forEach(container => {
+                container.classList.remove('show');
+            });
+
+            // Remove active from all subject buttons
+            document.querySelectorAll('.subject-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            currentSubject = null;
+        }
+
+        function closeAll() {
+            // Close everything
+            document.querySelectorAll('.batch-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            document.querySelectorAll('.subject-container').forEach(container => {
+                container.classList.remove('show');
+            });
+
+            closeVideos();
+
+            currentBatch = null;
+            currentSubject = null;
+
+            // Scroll to top
+            document.querySelector('.geo-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
     <!-- Projects Gallery -->
     <section id="projects" class="projects">
         <div class="container">
