@@ -74,9 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
        ======================================== */
     const phrases = [
         'Learn Online Education',
-        'Master Geography A/L',
-        'Excel in Mathematics',
-        'Explore Buddhist Civilization',
+        'Master Class in Geography A/L',
+        'Mathematics O/L & A/L',
+        'Buddhist Civilization A/L',
         'Join OGURU Institute'
     ];
     let phraseIndex = 0;
